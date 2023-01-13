@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋天</title>
+    <style>
+        .banner {
+            background: url(img/banner1.jpg);
+            width: 400px;
+            height: 700px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .zs {
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation: zsk 3s;
+        }
+
+        .bj {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            animation: bjk 3.5s;
+        }
+
+        .cf {
+            position: absolute;
+            left: 35%;
+            top: 73%;
+            animation: cfk 4s;
+
+        }
+
+        .wz {
+            position: absolute;
+            top: 15%;
+            left: 31%;
+            animation: wzk 2s;
+            animation-fill-mode: forwards;
+
+        }
+
+        .xs {
+            color: rgb(132, 75, 75);
+            font-weight: bold;
+            letter-spacing: 10px;
+            position: absolute;
+            top: 85%;
+            left: 20%;
+            animation: xsk 4s;
+        }
+
+        @keyframes zsk {
+            0% {
+                top: -100px;
+                right: -100px;
+                opacity: 0;
+            }
+
+            100% {
+                top: 0;
+                right: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes wzk {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bjk {
+            0% {
+                bottom: -400px;
+                opacity: 0;
+            }
+            100% {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes cfk {
+            0% {
+                left: -100PX;
+                top: 78%;
+            }
+
+            100% {
+                left: 35%;
+                top: 73%;
+            }
+        }
+
+        @keyframes xsk {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">
+        <div class="banner">
+        <img src="左上.png" alt="" class="zs" width="350px">
+        <img src="树叶.png" alt="" class="zs" width="250px">
+        <img src="背景.png" alt="" class="bj" width="400px">
+        <img src="船夫.png" alt="" class="cf" width="80px">
+        <img src="文字.png" alt="" class="wz" width="250px">
+        <div class="xs">中国传统二十四节气</div>
+    </div>
+    </a>
+    
+
+    <script>
+
+    </script>
+</body>
+
+</html>

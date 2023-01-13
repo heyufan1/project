@@ -1,0 +1,108 @@
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        .a1 {
+            opacity: 0.5;
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            position: absolute;
+            line-height: 50px;
+            text-align: center;
+            transition: all 0.1s;
+            
+        }
+
+         a{
+            font-size:28px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #ccc;
+            border-radius: 50%;
+            transition: all 0.5s;
+            text-decoration: none;
+            
+        }
+
+        .zao a:hover{
+            background-color: rgb(246, 139, 0);
+            color: white;
+        }
+
+        .wan {
+            opacity: 0;
+            transition: all 0.5s;
+            height: 0vh;
+            width: 100vw;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            color: white;
+            text-align: center;
+            font-size: 200px;
+            overflow: hidden;
+            background: url(晚上.webp);
+            background-size:cover ;
+            background-position:center ;
+        }
+
+        .wan a{
+            color: black;
+            background-color: white;
+        }
+        .wan a:hover{
+            background-color: aqua;
+            color: white;
+        }
+        input:checked~.wan {
+            opacity: 1;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            padding-top: 200px;
+
+        }
+
+        input:checked~ label>div{
+            color: white;
+            font-weight:bold;
+            background-color: black;
+        }
+
+        .time,
+        .times {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+
+
+        .zao {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            font-size: 200px;
+            text-align: center;
+            z-index: -15;
+            padding-top: 200px;
+            background: url(早上.webp);
+            background-size:cover ;
+            background-position:center ;
+        }
+
+        .zao>.time {
+            color: black;
+        }

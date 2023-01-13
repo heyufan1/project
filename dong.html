@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冬天</title>
+    <style>
+        .banner {
+            background: url(img/banner.jpg);
+            width: 400px;
+            height: 700px;
+            border: 1px solid #ccc;
+            background-size: cover;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sz {
+            position: absolute;
+            top: -15px;
+            left: -30px;
+            animation: szk 2s;
+            z-index: 5;
+        }
+
+        .ct {
+            position: absolute;
+            top:25%;
+            left:35%;
+            animation: ctk 3.5s;
+        }
+
+
+        .bj{
+            position: absolute;
+            bottom: 0;
+            animation: bjk 3s;
+        }
+
+        @keyframes szk {
+            0% {
+                top: -100px;
+                opacity: 0;
+            }
+
+            100% {
+                top: -15px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes ctk {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bjk {
+            0% {
+                bottom: -400px;
+                opacity: 0;
+            }
+            100% {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="index.html">
+        <div class="banner">
+        <img src="树枝.png" alt="" class="sz" width="250px">
+        <img src="center.png" alt="" class="ct" width="150px">
+        <img src="botton.png" alt="" class="bj" width="400px">
+        
+    </div>
+    </a>
+    
+
+    <script>
+
+    </script>
+</body>
+
+</html>
